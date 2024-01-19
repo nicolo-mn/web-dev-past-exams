@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
+
+header {
+    border: 2px dashed blue;
+    border-radius: 25px;
+    width: 94%;
+    margin: 1%;
+}
+
+nav {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 20%;
+    margin-right: .5%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background: lightgreen;
+    border-color: green;
+}
+
+nav ul li:last-child {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+    text-align: left;
+}
+
+footer {
+    width: 98%;
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
