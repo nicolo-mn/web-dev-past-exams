@@ -11,25 +11,6 @@
     foreach($result as $city) {
         $cities[] = $city["citta"];
     }
-    if($_SERVER['REQUEST_METHOD'] == 'GET') {
-        $selectedCity = $_GET['citta'];
-        $query = "SELECT max FROM temperature WHERE citta = ?";
-        $stmt = $db->prepare($query);
-        $stmt->bind_param("s", $selectedCity);
-        $stmt->execute();
-        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-        $max = $result[0]["max"];
-
-        $query = "SELECT min FROM temperature WHERE citta = ?";
-        $stmt = $db->prepare($query);
-        $stmt->bind_param("s", $selectedCity);
-        $stmt->execute();
-        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-        $min = $result[0]["min"];
-        echo "<p>Città selezionata: ".$selectedCity."</p>";
-        echo "<p>Temperatura massima: ".$max."</p>";
-        echo "<p>Temperatura minima: ".$min."</p>";
-    }
 ?>
 
 <html lang="it">
@@ -49,5 +30,26 @@
       </select>
       <input type="submit" value="Invia" />
     </form>
+    <?php
+        if(isset($_GET['citta'])) {
+            $selectedCity = $_GET['citta'];
+            $query = "SELECT max FROM temperature WHERE citta = ?";
+            $stmt = $db->prepare($query);
+            $stmt->bind_param("s", $selectedCity);
+            $stmt->execute();
+            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+            $max = $result[0]["max"];
+    
+            $query = "SELECT min FROM temperature WHERE citta = ?";
+            $stmt = $db->prepare($query);
+            $stmt->bind_param("s", $selectedCity);
+            $stmt->execute();
+            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+            $min = $result[0]["min"];
+            echo "<p>Città selezionata: ".$selectedCity."</p>";
+            echo "<p>Temperatura massima: ".$max."</p>";
+            echo "<p>Temperatura minima: ".$min."</p>";
+        } 
+    ?>
   </body>
 </html>
