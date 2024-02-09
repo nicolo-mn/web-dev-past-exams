@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+    background: orange;
+    color: darkred;
+}
+
+fieldset {
+    box-shadow: 5px -5px 10px gray;
+    border-color: darkred;
+}
+
+form {
+    background-color: yellow;
+    border: 2px solid orange;
+    box-shadow: 5px -5px 4px gray;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 120%;
+    color: black;
+}
+
+input[type=submit],
+input[type=reset] {
+    background: orange;
+    color: black;
+    font-size: 150%;
+    border-radius: 4px;
+}
