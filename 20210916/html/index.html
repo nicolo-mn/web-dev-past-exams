@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Esercizio</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="in" scope="col">inquadramento</th>
+                <th scope="col" id="pers">personale</th>
+                <th scope="col" id="unit">unità di personale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="2" id="wn" headers="in">Donne</th>
+                <th headers="pers wn" scope="row" id="doc">Docenti</th>
+                <td headers="unit doc">1782</td>
+            </tr>
+            <tr>
+                <th headers="pers wn" id="am" scope="row">amministrativi</th>
+                <td headers="unit am">1012</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" id="mn" headers="in">Uomini</th>
+                <th headers="pers mn" scope="row" id="doc_mn">Docenti</th>
+                <td headers="unit doc_mn">1497</td>
+            </tr>
+            <tr>
+                <th headers="pers mn" id="am_mn" scope="row">amministrativi</th>
+                <td headers="unit am_mn">1246</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
