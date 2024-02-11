@@ -18,19 +18,20 @@
             <legend>Prenotazione</legend>
             <p>Tipo di prenotazione</p>
             <ul>
-                <li><input type="checkbox" id="tampone" name="tampone" value="tampone"/><label for="tampone">tampone</label></li>
-                <li><input type="checkbox" id="sierologico" name="sierologico" value="sierologico"/><label for="sierologico">sierologico</label></li>
-                <li><input type="checkbox" id="vaccino" name="vaccino" value="vaccino"/><label for="vaccino">vaccino</label></li>
+                <li><input type="checkbox" id="tampone" name="luogo" value="tampone"/><label for="tampone">tampone</label></li>
+                <li><input type="checkbox" id="sierologico" name="luogo" value="sierologico"/><label for="sierologico">sierologico</label></li>
+                <li><input type="checkbox" id="vaccino" name="luogo" value="vaccino"/><label for="vaccino">vaccino</label></li>
             </ul>
             <p>Luogo</p>
             <ul>
-                <li><input type="radio" id="farmacia" name="farmacia" value="farmacia" required/><label for="farmacia">farmacia</label></li>
-                <li><input type="radio" id="medico" name="medico" value="medico"/><label for="medico">medico</label></li>
-                <li><input type="radio" id="ambulatorio" name="ambulatorio" value="ambulatorio"/><label for="ambulatorio">ambulatorio</label></li>
-                <li><input type="radio" id="ospedale" name="ospedale" value="ospedale"/><label for="ospedale">ospedale</label></li>
+                <li><input type="radio" id="farmacia" name="luogo" value="farmacia" required/><label for="farmacia">farmacia</label></li>
+                <li><input type="radio" id="medico" name="luogo" value="medico"/><label for="medico">medico</label></li>
+                <li><input type="radio" id="ambulatorio" name="luogo" value="ambulatorio"/><label for="ambulatorio">ambulatorio</label></li>
+                <li><input type="radio" id="ospedale" name="luogo" value="ospedale"/><label for="ospedale">ospedale</label></li>
             </ul>
         </fieldset>
-        <input type="reset" value="Cancella" />
+        <label for="cancella" hidden>Cancella: </label>
+        <input type="reset" id="cancella" value="Cancella" />
         <input type="submit" value="Invia" />
     </form>
 </body>
