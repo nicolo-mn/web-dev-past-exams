@@ -1,14 +1,14 @@
 <?php
 require_once "helper.php";
 if (
-    isset($_GET["chiave"]) &&
-    isset($_GET["valore"]) &&
-    isset($_GET["metodo"]) &&
-    ($_GET["metodo"] === 'db' || $_GET["metodo"] === 'cookie')
+    isset($_POST["chiave"]) &&
+    isset($_POST["valore"]) &&
+    isset($_POST["metodo"]) &&
+    ($_POST["metodo"] === 'db' || $_POST["metodo"] === 'cookie')
 ) {
-    $metodo = $_GET["metodo"];
-    $chiave = $_GET["chiave"];
-    $valore = $_GET["valore"];
+    $metodo = $_POST["metodo"];
+    $chiave = $_POST["chiave"];
+    $valore = $_POST["valore"];
     switch ($metodo) {
         case "db":
             $query = "SELECT COUNT(*) as count FROM dati WHERE chiave = ?";
