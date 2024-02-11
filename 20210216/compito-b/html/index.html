@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tabella</title>
+    <style>
+        td, th, table {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="st" rowspan="2" scope="col">Stagione</th>
+                <th colspan="2" scope="colgroup" id="te">Titolo</th>
+            </tr>
+            <tr>
+                <th scope="col" headers="te" id="tei">Titolo in Italiano</th>
+                <th scope="col" headers="te" id="teo">Titolo in Originale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="pr" headers="st" rowspan="2" scope="rowgroup">Prima</th>
+                <td headers="pr tei">A lume di candela</td>
+                <td headers="pr teo">The one with the blackout</td>
+            </tr>
+            <tr>
+                <td headers="pr tei">Uno strano ospite</td>
+                <td headers="pr teo">The one with the stoned guy</td>
+            </tr>
+            <tr>
+                <th id="sc" headers="st" rowspan="2" scope="rowgroup">Seconda</th>
+                <td headers="sc tei">I due bulli</td>
+                <td headers="sc teo">The one with the bullies</td>
+            </tr>
+            <tr>
+                <td headers="sc tei">Doppia festa per Rachel</td>
+                <td headers="sc teo">The one with the two parties</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
