@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <ul>
+                <li><label for="nome">Nome: </label><input type="text" id="nome" name="nome" required/></li>
+                <li><label for="cognome">Cognome: </label><input type="text" id="cognome" name="cognome" required/></li>
+                <li><label for="datanascita">Data di nascita: </label><input type="date" id="datanascita" name="datanascita" required/></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Prenotazione</legend>
+            <p>Tipo di prenotazione</p>
+            <ul>
+                <li><input type="checkbox" id="tampone" name="tampone" value="tampone"/><label for="tampone">tampone</label></li>
+                <li><input type="checkbox" id="sierologico" name="sierologico" value="sierologico"/><label for="sierologico">sierologico</label></li>
+                <li><input type="checkbox" id="vaccino" name="vaccino" value="vaccino"/><label for="vaccino">vaccino</label></li>
+            </ul>
+            <p>Luogo</p>
+            <ul>
+                <li><input type="radio" id="farmacia" name="farmacia" value="farmacia" required/><label for="farmacia">farmacia</label></li>
+                <li><input type="radio" id="medico" name="medico" value="medico"/><label for="medico">medico</label></li>
+                <li><input type="radio" id="ambulatorio" name="ambulatorio" value="ambulatorio"/><label for="ambulatorio">ambulatorio</label></li>
+                <li><input type="radio" id="ospedale" name="ospedale" value="ospedale"/><label for="ospedale">ospedale</label></li>
+            </ul>
+        </fieldset>
+        <input type="reset" value="Cancella" />
+        <input type="submit" value="Invia" />
+    </form>
+</body>
+</html>
