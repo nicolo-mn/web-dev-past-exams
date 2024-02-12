@@ -1,0 +1,25 @@
+h1 {
+    text-decoration: overline;
+    text-decoration: underline;
+}
+
+fieldset {
+    border: 1px dotted blue;
+}
+
+input[type="submit"] {
+    text-decoration: overline;
+    color: white;
+    background-color: blue;
+    padding: 3% 0;
+    border-radius: 5px;
+    width: 100%;
+    rotate: -10deg;
+    margin-top: 7rem;
+    transition: all 0.5s;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    background-color: yellow;
+}
