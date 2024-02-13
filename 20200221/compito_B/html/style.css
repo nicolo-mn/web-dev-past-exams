@@ -1,0 +1,65 @@
+h1 {
+    text-align: right;
+    text-decoration: line-through;
+    margin-right: 11rem;
+}
+
+fieldset {
+    border: 1px dotted red;
+    width: 45%;
+}
+
+legend {
+    font-weight: bold;
+}
+
+fieldset:first-child {
+    float: right;
+}
+
+span {
+    display: block;
+}
+
+fieldset:first-child span input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+fieldset:nth-child(2) span input {
+    float: right;
+}
+
+fieldset:nth-child(2) span label {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+
+fieldset:nth-child(2) span {
+    margin: 1rem 0;
+}
+
+fieldset:last-child {
+    float: left;
+}
+
+input[type="submit"] {
+    background-color: red;
+    border-radius: 5px;
+    padding: 1rem 0;
+    width: 45%;
+    rotate: 10deg;
+    margin-top: 1rem;
+    transition: all 3s;
+    color: white;
+    text-decoration: underline;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: black;
+}
+
+input[type="range"] {
+    width: 50%;
+}

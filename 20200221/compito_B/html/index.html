@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>Esercizio</title>
 </head>
 <body>
@@ -12,21 +13,33 @@
             <label for="altezza">Altezza: </label>
             <input type="range" id="altezza" min="1" max="2.10" step="0.1" />
             <p>Allergie/intolleranze: </p>
-            <input type="radio" id="celiachia" name="allergia" value="celiachia"/>
-            <label for="celiachia">Celiachia</label>
-            <input type="radio" id="proteine" name="allergia" value="proteine"/>
-            <label for="proteine">Proteine del latte</label>
-            <input type="radio" id="altro" name="allergia" value="altro"/>
-            <label for="altro">Altro</label>
+            <span>
+                <input type="checkbox" id="celiachia" name="allergia" value="celiachia"/>
+                <label for="celiachia">Celiachia</label>
+            </span>
+            <span>
+                <input type="checkbox" id="proteine" name="allergia" value="proteine"/>
+                <label for="proteine">Proteine del latte</label>
+            </span>
+            <span>
+                <input type="checkbox" id="altro" name="allergia" value="altro"/>
+                <label for="altro">Altro</label>
+            </span>
         </fieldset>
         <fieldset>
             <legend>Informazioni personali</legend>
-            <label for="email">Email: </label>
-            <input type="email" placeholder="email" id="email" name="email" required/>
-            <label for="telefono">Telefono: </label>
-            <input type="tel" placeholder="telefono" id="telefono" name="telefono" required/>
-            <label for="nascita">Mese e anno di nascita: </label>
-            <input type="month" id="nascita" name="nascita"/>
+            <span>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="email" id="email" name="email" required/>
+            </span>
+            <span>
+                <label for="telefono">Telefono: </label>
+                <input type="tel" placeholder="telefono" id="telefono" name="telefono" required/>
+            </span>
+            <span>
+                <label for="nascita">Mese e anno di nascita: </label>
+                <input type="month" id="nascita" name="nascita"/>
+            </span>
         </fieldset>
         <input type="submit" value="Invia"/>
     </form>
