@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Esercizio</title>
+</head>
+<body>
+    <h1>Iscrizione</h1>
+    <form action="action.php" method="post">
+        <fieldset>
+            <legend>Informazioni aggiuntive</legend>
+            <label for="altezza">Altezza: </label>
+            <input type="range" id="altezza" min="1" max="2.10" step="0.1" />
+            <p>Allergie/intolleranze: </p>
+            <input type="radio" id="celiachia" name="allergia" value="celiachia"/>
+            <label for="celiachia">Celiachia</label>
+            <input type="radio" id="proteine" name="allergia" value="proteine"/>
+            <label for="proteine">Proteine del latte</label>
+            <input type="radio" id="altro" name="allergia" value="altro"/>
+            <label for="altro">Altro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Informazioni personali</legend>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="email" id="email" name="email" required/>
+            <label for="telefono">Telefono: </label>
+            <input type="number" placeholder="telefono" id="telefono" name="telefono" required/>
+            <label for="nascita">Mese e anno di nascita: </label>
+            <input type="month" id="nascita" name="nascita"/>
+        </fieldset>
+        <input type="submit" value="Invia"/>
+    </form>
+</body>
+</html>
