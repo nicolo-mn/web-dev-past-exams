@@ -1,0 +1,48 @@
+table, caption, th:not(th:first-child), td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+thead {
+    text-transform: uppercase;
+}
+
+
+caption {
+    border-bottom: 1px solid black;
+}
+
+#carne {
+    background-color: yellow;
+}
+
+th[headers="carne"] {
+    background-color: burlywood;
+}
+
+thead tr:nth-child(3) th {
+    background-color: lightskyblue;
+}
+
+thead tr:nth-child(4) th {
+    background-color: lightsteelblue;
+}
+
+thead tr:nth-child(5) th,
+tbody th {
+    background-color: lightblue;
+}
+
+thead tr th:first-child {
+    background-color: darkgrey;
+}
+
+table thead tr th:first-child,
+table tbody th {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+#kcal, #kj {
+    text-decoration: underline;
+}
