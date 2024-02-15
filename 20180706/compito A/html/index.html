@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tabella</title>
+</head>
+<body>
+    <table>
+        <caption>
+            Composizione chimica e valore energetico degl alimenti (per 100g)
+        </caption>
+        <thead>
+            <tr>
+                <th class="bg-empty"></th>
+                <th colspan="13" scope="colgroup" id="carne">Carne</th>
+            </tr>
+            <tr>
+                <th class="bg-empty"></th>
+                <th headers="carne" colspan="8" scope="colgroup" id="fresca">Fresca</th>
+                <th headers="carne" colspan="5" scope="colgroup" id="conservata">Conservata</th>
+            </tr>
+            <tr>
+                <th class="bg-empty"></th>
+                <th headers="fresca" colspan="6" scope="colgroup" id="bovino">Bovino</th>
+                <th headers="fresca" colspan="2" scope="colgroup" id="pollame">Pollame</th>
+                <th headers="conservata" colspan="5" scope="colgroup" id="suino">Suino</th>
+            </tr>
+            <tr>
+                <th class="bg-empty"></th>
+                <th headers="bovino" scope="colgroup" colspan="3" id="vitellone">Vitellone</th>
+                <th headers="bovino" scope="colgroup" colspan="3" id="adulto">Adulto</th>
+                <th headers="pollame" scope="colgroup" colspan="2" id="faraona">Faraona</th>
+                <th headers="suino" colspan="2" scope="colgroup" id="salsiccia">salsiccia</th>
+                <th headers="suino" colspan="3" scope="colgroup" id="prosciutto">prosciutto</th>
+            </tr>
+            <tr>
+                <th class="bg-empty"></th>
+                <th headers="vitellone" scope="col" id="vit-mag">magra</th>
+                <th headers="vitellone" scope="col" id="vit-semigras">semi-grassaa</th>
+                <th headers="vitellone" scope="col" id="vit-gras">semi-grassa</th>
+                <th headers="adulto" scope="col" id="ad-mag">magra</th>
+                <th headers="adulto" scope="col" id="ad-semigras">semi-grassaa</th>
+                <th headers="adulto" scope="col" id="ad-gras">semi-grassa</th>
+                <th headers="faraona" scope="col" id="far-pet">petto</th>
+                <th headers="faraona" scope="col" id="far-co">coscia</th>
+                <th headers="salsiccia" scope="col" id="sal-fre">fresca</th>
+                <th headers="salsiccia" scope="col" id="sal-sec">secca</th>
+                <th headers="prosciutto" scope="col" id="pro-cru">crudo</th>
+                <th headers="prosciutto" scope="col" id="pro-cruma">crudo-magro</th>
+                <th headers="prosciutto" scope="col" id="pro-cot">cotto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" id="proteine">Proteine</th>
+                <td headers="proteine vit-mag">12.0</td>
+                <td headers="proteine vit-semigras">12.0</td>
+                <td headers="proteine vit-gras">12.0</td>
+                <td headers="proteine ad-mag">12.0</td>
+                <td headers="proteine ad-semigras">12.0</td>
+                <td headers="proteine ad-gras">12.0</td>
+                <td headers="proteine far-pet">12.0</td>
+                <td headers="proteine far-co">12.0</td>
+                <td headers="proteine sal-fre">12.0</td>
+                <td headers="proteine sal-sec">12.0</td>
+                <td headers="proteine pro-cru">12.0</td>
+                <td headers="proteine pro-cruma">12.0</td>
+                <td headers="proteine pro-cot">12.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="lipidi">Lipidi</th>
+                <td headers="lipidi vit-mag">12.0</td>
+                <td headers="lipidi vit-semigras">12.0</td>
+                <td headers="lipidi vit-gras">12.0</td>
+                <td headers="lipidi ad-mag">12.0</td>
+                <td headers="lipidi ad-semigras">12.0</td>
+                <td headers="lipidi ad-gras">12.0</td>
+                <td headers="lipidi far-pet">12.0</td>
+                <td headers="lipidi far-co">12.0</td>
+                <td headers="lipidi sal-fre">12.0</td>
+                <td headers="lipidi sal-sec">12.0</td>
+                <td headers="lipidi pro-cru">12.0</td>
+                <td headers="lipidi pro-cruma">12.0</td>
+                <td headers="lipidi pro-cot">12.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="gluicidi">Gluicidi</th>
+                <td headers="gluicidi vit-mag">12.0</td>
+                <td headers="gluicidi vit-semigras">12.0</td>
+                <td headers="gluicidi vit-gras">12.0</td>
+                <td headers="gluicidi ad-mag">12.0</td>
+                <td headers="gluicidi ad-semigras">12.0</td>
+                <td headers="gluicidi ad-gras">12.0</td>
+                <td headers="gluicidi far-pet">12.0</td>
+                <td headers="gluicidi far-co">12.0</td>
+                <td headers="gluicidi sal-fre">12.0</td>
+                <td headers="gluicidi sal-sec">12.0</td>
+                <td headers="gluicidi pro-cru">12.0</td>
+                <td headers="gluicidi pro-cruma">12.0</td>
+                <td headers="gluicidi pro-cot">12.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="kcal">Kcal</th>
+                <td headers="kcal vit-mag">12.0</td>
+                <td headers="kcal vit-semigras">12.0</td>
+                <td headers="kcal vit-gras">12.0</td>
+                <td headers="kcal ad-mag">12.0</td>
+                <td headers="kcal ad-semigras">12.0</td>
+                <td headers="kcal ad-gras">12.0</td>
+                <td headers="kcal far-pet">12.0</td>
+                <td headers="kcal far-co">12.0</td>
+                <td headers="kcal sal-fre">12.0</td>
+                <td headers="kcal sal-sec">12.0</td>
+                <td headers="kcal pro-cru">12.0</td>
+                <td headers="kcal pro-cruma">12.0</td>
+                <td headers="kcal pro-cot">12.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="kj">Kj</th>
+                <td headers="kj vit-mag">12.0</td>
+                <td headers="kj vit-semigras">12.0</td>
+                <td headers="kj vit-gras">12.0</td>
+                <td headers="kj ad-mag">12.0</td>
+                <td headers="kj ad-semigras">12.0</td>
+                <td headers="kj ad-gras">12.0</td>
+                <td headers="kj far-pet">12.0</td>
+                <td headers="kj far-co">12.0</td>
+                <td headers="kj sal-fre">12.0</td>
+                <td headers="kj sal-sec">12.0</td>
+                <td headers="kj pro-cru">12.0</td>
+                <td headers="kj pro-cruma">12.0</td>
+                <td headers="kj pro-cot">12.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
